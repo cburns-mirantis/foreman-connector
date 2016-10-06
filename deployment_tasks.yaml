@@ -1,0 +1,12 @@
+- id: citrix-foreman-connector
+  type: shell
+  role: [ceilometer]
+  required_for: [deploy_end]
+  requires: [deploy_start]
+  parameters:
+    strategy: parallel
+    amount: 3
+    cmd: echo "citrix-foreman-connector task executed" >> /tmp/citrix-foreman-connector.log
+    retries: 3
+    interval: 20
+    timeout: 180

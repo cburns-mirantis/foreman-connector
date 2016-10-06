@@ -1,0 +1,119 @@
+attributes:
+  metadata:
+    # Settings group can be one of "general", "security", "compute", "network",
+    # "storage", "logging", "openstack_services" and "other".
+    group: 'other'
+  foreman_url:
+    value: 'http://127.0.0.1:8080'
+    label: 'Foreman API URL'
+    description: 'URL to reach Foreman API'
+    weight: 25
+    type: "text"
+  foreman_user:
+    value: 'stackrabbit'
+    label: 'Foreman User'
+    description: 'User Account to Connect to Foreman API'
+    weight: 25
+    type: "text"
+  foreman_passwd:
+    value: 'admin'
+    label: 'Foreman Password'
+    description: 'Password for Foreman User'
+    weight: 25
+    type: "text"
+  puppet_host:
+    value: 'http://puppet.localdomain'
+    label: 'Puppet URL'
+    description: 'URL to reach Puppet'
+    weight: 25
+    type: "text"
+  puppet_cacert:
+    value: '/path/to/file'
+    label: 'CA Cert Path'
+    description: 'Path to find puppet cacert file'
+    weight: 25
+    type: "text"
+  puppet_cert:
+    value: '/path/to/file'
+    label: 'Cert Path'
+    description: 'Path to find puppet SSL cert file'
+    weight: 25
+    type: "text"
+  puppet_key:
+    value: '/path/to/file'
+    label: 'Key Path'
+    description: 'Path to find puppet SSL key file'
+    weight: 25
+    type: "text"
+  queue_host:
+    value: '192.168.1.15'
+    label: 'Queue Host IP'
+    description: 'Message Queue Service IP'
+    weight: 25
+    type: "text"
+  queue_user:
+    value: '/path/to/file'
+    label: 'Key Path'
+    description: 'Path to find puppet SSL key file'
+    weight: 25
+    type: "text"
+  queue_password:
+    value: '/path/to/file'
+    label: 'Key Path'
+    description: 'Path to find puppet SSL key file'
+    weight: 25
+    type: "text"
+  queue_os_auth_url:
+    value: 'http://192.168.1.15:5000/v2.0'
+    label: 'OpenStack Auth URL'
+    description: 'os_auth_url environment variable'
+    weight: 25
+    type: "text"
+  queue_os_user:
+    value: '/path/to/file'
+    label: 'OpenStack User'
+    description: 'os_user environment variable'
+    weight: 25
+    type: "text"
+  queue_os_tenant:
+    value: '/path/to/file'
+    label: 'OpenStack Tenant'
+    description: 'os_tenant environment variable'
+    weight: 25
+    type: "text"
+  queue_os_password:
+    value: 'admin'
+    label: 'OpenStack Password'
+    description: 'os_password environment variable'
+    weight: 25
+    type: "text"
+  default_medium_id:
+    value: '3'
+    label: 'Default Medium ID'
+    description: 'Default Medium ID'
+    weight: 25
+    type: "number"
+  default_ptable_id:
+    value: '3'
+    label: 'Default Ptable ID'
+    description: '1'
+    weight: 25
+    type: "number"
+  default_operating_system_id:
+    value: '14'
+    label: 'Default OS ID'
+    description: 'Default Operating System ID'
+    weight: 25
+    type: "number"
+  _environment:
+    value: 'BILL'
+    label: 'Foreman Environment'
+    description: 'Foreman Environment'
+    weight: 25
+    type: "string"
+  host_group:
+    value: 'BILL'
+    label: 'Foreman Host Group'
+    description: 'Foreman Host Group'
+    weight: 25
+    type: "string"
